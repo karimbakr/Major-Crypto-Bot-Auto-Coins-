@@ -85,7 +85,7 @@ if query_id:
 
                 response_swipe_coin = requests.post(url_swipe_coin, data=payload_swipe_coin, headers=headers_swipe_coin)
                 
-                if response_swipe_coin.status_code == 200:
+                if response_swipe_coin.status_code == 201:
                     print(Fore.GREEN + success_emoji + " Swipe Coin Request Success!")
                 else:
                     print(Fore.RED + error_emoji + f" Swipe Coin Error {response_swipe_coin.status_code}: {response_swipe_coin.text}")
@@ -114,7 +114,7 @@ if query_id:
 
                 response_bonuses = requests.post(url_bonuses, data=payload_bonuses, headers=headers_bonuses)
                 
-                if response_bonuses.status_code == 200:
+                if response_bonuses.status_code == 201:
                     print(Fore.GREEN + success_emoji + " Bonuses Coins Request Success!")
                 else:
                     print(Fore.RED + error_emoji + f" Bonuses Coins Error {response_bonuses.status_code}: {response_bonuses.text}")
@@ -143,7 +143,7 @@ if query_id:
 
                 response_roulette = requests.post(url_roulette, data=payload_roulette, headers=headers_roulette)
                 
-                if response_roulette.status_code == 200:
+                if response_roulette.status_code == 201:
                     print(Fore.GREEN + success_emoji + " Roulette Request Success!")
                 else:
                     print(Fore.RED + error_emoji + f" Roulette Error {response_roulette.status_code}: {response_roulette.text}")
